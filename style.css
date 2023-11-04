@@ -1,0 +1,233 @@
+html {
+  font-family: poppins;
+}
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: poppins;
+  
+}
+/*CLASSI GENERALI*/
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.img-medium {
+  width: 300px;
+
+}
+/*ALLINEAMENTO VERTICALE*/
+.align-center {
+  align-self: center !important;
+}
+/********--------*****/
+div#title {
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  font-size: 122px !important;
+  font-family: orpheus;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+  background-color: rgba(0,0,0,0.6) !important;
+}
+h1 {
+  font-size: 100px;
+}
+div#header {
+  color: #fff !important;
+  background: url("assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div#menu {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+div#menu-selection {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+}
+
+section#about,section#skill {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #000;
+}
+
+#image-about {
+  text-align: center;
+}
+
+h2 {
+  font-size: 70px !important;
+  font-family: orpheus;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+}
+
+#text-work {
+  padding-top: 50px;
+}
+
+section#work {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+section#contacts {
+  background-color: rgba(0, 0, 0, 0.7)!important;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#image-work {
+  text-align: right;
+}
+
+h2 {
+  font-size: 70px !important;
+  font-family: orpheus;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+}
+
+#text-work {
+  padding-top: 50px;
+}
+
+img.img-skill {
+  width: 150px;
+  padding-bottom: 60px;
+}
+
+.col-4.col-skill {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h5 {
+  font-size: 30px !important;
+  font-family: orpheus;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+}
+
+img.icona-email {
+  width: 35px;
+}
+
+.contatti {
+  font-size: 20px;
+}
+
+img.icona-phone {
+  width: 35px;
+}
+
+.col-contatti {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding: 5px;
+}
+
+img.icona-git {
+  width: 35px;
+}
+
+.social {
+  font-size: 20px;
+}
+
+img.icona-instagram {
+  width: 35px;
+}
+
+img.icona-linkedin {
+  width: 35px;
+}
+
+.col-social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer {
+  background-color: #000;
+  text-align: center;
+}
+
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+a.btn {
+  background-color: #eee !important;
+  color: #000 !important;
+}
+
+@media screen and (max-width: 600px) {
+.col-6 {
+  width: 100% !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+h1 {
+  font-size: 60px !important;
+}
+#skill>.row>.col-4 {
+  width: 100% !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#contacts>.row>.col-3 {
+  width: 100% !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+}
+@media only screen and (max-width: 890px) and (min-width: 601px)  {
+  #contacts>.row>.col-3 {
+    width: 100% !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  } 
+
+  #contacts>.row>.col-6 {
+    width: 100% !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  form>.col-6 {
+    width: 100% !important;
+} 
+}

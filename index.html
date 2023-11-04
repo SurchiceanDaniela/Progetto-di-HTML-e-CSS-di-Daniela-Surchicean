@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--RICARICA IN AUTOMATICO CONTENT=30 OGNI 30 SECONDI-->
+    <!--<meta http-equiv="refresh" content="30" />-->
+
+    <!--SEO-->
+    <link rel="icon" type="image/vnd.icon" href="assets/icon/Progetto senza titolo.svg">
+    <title>PRIMO HTML</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+
+    <meta name="author" content="Daniela" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript">
+      function Email() {
+        var name = document.modulo.name.value;
+        var surname = document.modulo.surname.value;
+        var telephone = document.modulo.phone.value;
+        var email = document.modulo.email.value;
+        var emailm="email@email.it";
+        var message = document.modulo.message.value;
+        if ((email== "") || (email == "undefined")) {
+          alert("Write your E-mail");
+          document.modulo.email.focus();
+        }else{
+          var messaggio="Name: "+name+" Surname: "+surname+" Telephone: "+telephone+" Email: "+email+" Message: "+message;
+          var oggetto="Richiesta da sito web";
+          location.href = "mailto:" + emailm+ "?Subject=" + oggetto + "&Body=" + messaggio;
+        } 
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="row" id="menu">
+        <div class="col-4 align-center">
+          <img src="assets/logo.svg"
+          alt="logo"
+        />
+        </div>
+        <div class="col-8 align-center" id="menu-selection">
+           <div class="row" id="navbar">
+              <div class="col-3 sezioni-menu">
+                 <a href="#about"><p>About</p></a>
+              </div>
+              <div class="col-3 sezioni-menu">
+                <a href="#skill"><p>Skill</p></a>
+              </div>
+              <div class="col-3 sezioni-menu">
+               <a href="#contacts"> <p>Contact</p></a>
+              </div>
+            </div>
+        </div>
+          <!--INSERIRE IMMAGINE-->
+      </div>
+      <div class="row" id="title">
+        <h1>Web Developer<br>& Fashion Addicted</h1>
+      </div>
+    </div>
+    <div id="body">
+      <section id="about">
+        <div class="row">
+          <div class="col-6" id="image-about">
+            <img class="img-medium" src="assets/img/About.JPG">
+          </div>
+          <div class="col-6" id="text-about">
+            <h2>About me</h2>
+            <p>Hello! I'm Daniela Surchicean, a 26-year-old whirlwind with a passion for Web Development and an illogical obsession with tea. In my world, code and the aroma of tea blend into digital harmony.<br>
+
+              My cat, Efea, rules my home with an iron paw, even though she continues to ignore my plea for CSS help. I'm convinced that if only I could teach her to code, we'd have the next four-legged Web phenomenon! <br>
+      
+              When I'm not causing chaos in the coding world, I immerse myself in fashion because who said a web developer can't be chic? My lines of code are always coordinated with my outfit! <br>
+              
+              Reading books is my other passion, and I consider myself a true "book devourer." There's no book I can't finish in one night, no matter how many lines of code await me the next day. <br>
+              
+              So, if you're looking for a web developer with a dash of eccentricity, a touch of elegance, and an incredible passion for coding, I'm here to help take your project to the next level. <br>
+            </p></p>
+            <a type="button" href="#contacts" class="btn"> Contact me </a>
+            
+          </div>
+        </div>
+      </section>
+
+
+    <section id="skill">
+      <div class="row">
+        <div class="col-4 col-skill">
+          <img class="img-skill" src="assets/icon/html.svg">
+          <h5>HTML</h5>
+          <p>Medium-high level of proficiency</p>
+          <span class="level-skill">Medium/High</span>
+        </div>
+
+
+        <div class="col-4 col-skill">
+          <img class="img-skill" src="assets/icon/css.svg">
+          <h5>CSS</h5>
+          <p>Medium-high level of proficiency</p>
+          <span class="level-skill">Medium/High</span>
+        </div>
+
+
+        <div class="col-4 col-skill">
+          <img class="img-skill" src="assets/icon/js.svg">
+          <h5>JAVASCRIPT</h5>
+          <p>Medium-high level of proficiency</p>
+          <span class="level-skill">Medium/High</span>
+        </div>
+      </div>
+    </section>
+  </div>
+    <div id="footer"></div>
+
+
+    <section id="contacts" name="contatti">
+      <div class="row">
+        <div class="col-6">
+            <form name="modulo">
+              <div class="col-6"><input type="text" id="name" name="name" placeholder="Insert your name"></div>
+              <div class="col-6"><input type="text" id="surname" name="surname" placeholder="Insert your surname"></div>
+              <div class="col-6"><input type="tel" id="phone" name="phone" placeholder="Insert your telephone number"></div>
+              <div class="col-6"><input type="email" id="email" name="email" placeholder="Insert your email *" required></div>
+              <div class="col-6"><textarea id="message" name="message" rows="4" cols="50"></textarea></div>
+              <div class="col-6">
+              <input type="button" value="Invia" onClick="Email()">
+              </div>
+            </form>
+        </div>
+
+      
+        <div class="col-3">
+          <h5>Contact</h5>
+          <div class="row">
+            <div class="col-2 col-contatti">
+              <img class="icona-email" src="assets/icon/email.svg">
+            </div>
+            <div class="col-10 col-contatti">
+              <p class="contatti">email@email.it</p>
+            </div>
+
+
+          <div class="col-2 col-contatti">
+            <img class="icona-phone" src="assets/icon/phone.svg">
+          </div>
+          <div class="col-10 col-contatti">
+            <p class="contatti">123456789</p>
+          </div>
+          </div>
+      </div>
+      <div class="col-3">
+
+          <h5>Social</h5>
+          <div class="row">
+        <div class="col-2 col-social">
+          <img class="icona-git" src="assets/icon/git.svg">
+        </div>
+        <div class="col-10 col-social">
+          <p class="social"><a title="link-github"
+            href="https://github.com/SurchiceanDaniela" target="_blank" >
+            Github
+            </a></p>
+        </div>
+
+
+      <div class="col-2 col-social">
+        <img class="icona-instagram" src="assets/icon/instagram.svg">
+      </div>
+      <div class="col-10 col-social">
+        <p class="social"><a title="link-instagram"
+          href="https://instagram.com/danielasrcn?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" >
+          Instagram
+          </a></p>
+      </div>
+    
+
+  <div class="col-2 col-social">
+    <img class="icona-linkedin" src="assets/icon/linkedin.svg">
+  </div>
+  <div class="col-10 col-social">
+    <p class="social"><a title="link-linkedin"
+      href="https://www.linkedin.com/in/daniela-surchicean/" target="_blank" >
+      Linkedin
+      </a></p>
+  </div>
+  </div>
+      </div>
+      
+      </div>
+    </section>
+
+<div id="footer">
+  <div class="row">
+    <p>© 2023 Daniela Surchicean. Tutti i diritti riservati.
+    </p>
+  </div>
+</div>
+
+
+   
+
+  
+
+    <!--JS-->
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
