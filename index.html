@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="portfolio">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Daniela Surchicean">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="Porfolio Daniela Surchicean">
+    <meta property="og:locale" content="en_EN">
+    <!--SEO-->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="Daniela" />
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JS INVIO EMAIL-->
+    <script type="text/javascript">
+      function Email() {
+        var name = document.modulo.name.value;
+        var surname = document.modulo.surname.value;
+        var telephone = document.modulo.phone.value;
+        var email = document.modulo.email.value;
+        var emailm = "email@email.it";
+        var message = document.modulo.message.value;
+        if (email == "" || email == "undefined") {
+          alert("Write your E-mail");
+          document.modulo.email.focus();
+        } else {
+          var messaggio =
+            "Name: " +
+            name +
+            " Surname: " +
+            surname +
+            " Telephone: " +
+            telephone +
+            " Email: " +
+            email +
+            " Message: " +
+            message;
+          var oggetto = "Richiesta da sito web";
+          location.href =
+            "mailto:" + emailm + "?Subject=" + oggetto + "&Body=" + messaggio;
+        }
+      }
+    </script>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.svg" />
+    <title>PRIMO HTML</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="row" id="menu">
+        <div class="col-12 text-center">
+          <a class="white" href="#">
+            <img class="logo" src="assets/icon/logo.svg" alt="logo_daniela" title="Logo Daniela"/> 
+          </a>
+        </div>
+        <div class="col-12 text-center" id="menu-selection">
+          <div class="row" id="navbar">
+            <div class="col-3 sezioni-menu ">
+              <a class="white" href="#about"><p>About</p></a>
+            </div>
+            <div class="col-3 sezioni-menu">
+              <a class="white" href="#projects"><p>Projects</p></a>
+            </div>
+            <div class="col-3 sezioni-menu">
+              <a class="white" href="#skill"><p>Skill</p></a>
+            </div>
+            <div class="col-3 sezioni-menu">
+              <a class="white" href="#contacts"> <p>Contact</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="menu-mobile">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#" class="active">
+            <img class="logo" src="assets/icon/logo.svg" alt="logo_daniela" title="Logo Daniela"/>
+          </a>
+          <div id="myLinks">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skill">Skill</a>
+            <a href="#contacts">Contact</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row" id="title">
+        <h1 class="text-center">Web Developer<br />& Fashion Addicted</h1>
+      </div>
+    </div>
+    <div id="body">
+      <section id="about">
+        <div class="row">
+          <div class="col-6 text-center" id="image-about">
+            <img class="img-medium" src="assets/img/About.JPG" alt="foto-daniela" title="Foto Daniela"/>
+          </div>
+          <div class="col-6" id="text-about">
+            <h2>About me</h2>
+            <p>
+              Hello! I'm Daniela Surchicean, a 26-year-old whirlwind with a
+              passion for Web Development and an illogical obsession with tea.
+              In my world, code and the aroma of tea blend into digital
+              harmony.
+            </p>
+            <p>
+              My cat, Efea, rules my home with an iron paw, even though she
+              continues to ignore my plea for CSS help. I'm convinced that if
+              only I could teach her to code, we'd have the next four-legged Web
+              phenomenon!
+            </p>
+            <p>
+              When I'm not causing chaos in the coding world, I immerse myself
+              in fashion because who said a web developer can't be chic? My
+              lines of code are always coordinated with my outfit!
+            </p>
+            <p>
+              Reading books is my other passion, and I consider myself a true
+              "book devourer." There's no book I can't finish in one night, no
+              matter how many lines of code await me the next day.
+            </p>
+            <p>
+              So, if you're looking for a web developer with a dash of
+              eccentricity, a touch of elegance, and an incredible passion for
+              coding, I'm here to help take your project to the next level.
+            </p>
+            <p>
+              <a class="fuxia text-center" href="cv/index.html"><b>Click here for my CV</b></a>
+            </p>
+            <a type="button" href="#contacts" class="btn"> Contact me </a>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3>My projects</h3>
+            <p>My lasts projects</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <img src="assets/img/Progetto-1.png" alt="primo_progetto" title="Primo Progetto">
+            <h5>Web Site for Social Media Manager</h5>
+            <p>Web site dedicate for Social Media Managers</p>
+            <a type="button" href="https://github.com/SurchiceanDaniela?tab=projects" target="_blank" class="btn"> Discover Project </a>
+          </div>
+          <div class="col-4 text-center">
+            <img src="assets/img/Progetto-2.png" alt="secondo_progetto" title="Secondo Progetto">
+            <h5>Ecommerce Web Site</h5>
+            <p>Shop Online for clothing</p>
+            <a type="button" href="https://github.com/SurchiceanDaniela?tab=projects" target="_blank" class="btn"> Discover Project </a>
+          </div>
+          <div class="col-4 text-center">
+            <img src="assets/img/progetto-3.png" alt="terzo_progetto" title="Terzo Progetto">
+            <h5>Graphic Web Developer course</h5>
+            <p>Graphic created for a Web Developer course</p>
+            <a type="button" href="https://github.com/SurchiceanDaniela?tab=projects" target="_blank" class="btn">Discover Project </a>
+          </div>
+        </div>
+
+      </section>
+      <section id="skill">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3>My skills</h3>
+          </div>
+          <div class="col-4 col-skill text-center">
+            <img class="img-skill" src="assets/icon/html.svg" alt="skill-html" title="Skill Html" />
+            <h5>HTML</h5>
+            <p>Medium-high level of proficiency</p>
+            <span class="level-skill">Medium/High</span>
+          </div>
+          <div class="col-4 col-skill text-center">
+            <img class="img-skill" src="assets/icon/css.svg" alt="skill-css" title="Skill css"/>
+            <h5>CSS</h5>
+            <p>Medium-high level of proficiency</p>
+            <span class="level-skill">Medium/High</span>
+          </div>
+          <div class="col-4 col-skill text-center">
+            <img class="img-skill" src="assets/icon/js.svg" alt="skill-js" title="Skill JS"/>
+            <h5>JAVASCRIPT</h5>
+            <p>Medium-high level of proficiency</p>
+            <span class="level-skill">Medium/High</span>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" name="contatti">
+        <div class="row">
+          <div class="col-6">
+            <form name="modulo">
+              <div class="col-12">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Insert your name"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  placeholder="Insert your surname"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Insert your telephone number"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Insert your email *"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <input type="button" value="Invia" onClick="Email()" />
+              </div>
+            </form>
+          </div>
+          <div class="col-3">
+            <h4>Contact</h4>
+            <div class="row">
+              <div class="col-2 col-contatti">
+                <img class="icona-email" src="assets/icon/email.svg" alt="icon-email" title="Icon Email"/>
+              </div>
+              <div class="col-10 col-contatti">
+                <p class="contatti">email@email.it</p>
+              </div>
+              <div class="col-2 col-contatti">
+                <img class="icona-phone" src="assets/icon/phone.svg" alt="icon-phone" title="Icon Phone"/>
+              </div>
+              <div class="col-10 col-contatti">
+                <p class="contatti">123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <h4>Social</h4>
+            <div class="row">
+              <div class="col-2 col-social">
+                <img class="icona-git" src="assets/icon/git.svg" alt="icon-git" title="Icon Git"/>
+              </div>
+              <div class="col-10 col-social">
+                <p class="social">
+                  <a class="white"
+                    title="link-github"
+                    href="https://github.com/SurchiceanDaniela"
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                </p>
+              </div>
+              <div class="col-2 col-social">
+                <img class="icona-linkedin" src="assets/icon/linkedin.svg" alt="icon-linkedin" title="Icon Linkedin"/>
+              </div>
+              <div class="col-10 col-social">
+                <p class="social">
+                  <a class="white"
+                    title="link-linkedin"
+                    href="https://www.linkedin.com/in/daniela-surchicean/"
+                    target="_blank"
+                  >
+                    Linkedin
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="footer">
+      <div class="row text-center">
+        <p>© 2023 Daniela Surchicean. All rights reserved.</p>
+      </div>
+    </div>
+    <!--JS-->
+    <!-- BOOTSTRAP JS -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
